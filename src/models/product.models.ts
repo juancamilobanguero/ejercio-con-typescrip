@@ -1,4 +1,5 @@
 import mongoose, { Schema, version } from "mongoose";
+import { factura } from "../controllers/factura.controllers";
 
 //schema de la colleccion 
 
@@ -13,7 +14,7 @@ const Product = new Schema({
     timestamps: true,
     versionKey: false
 })
-export default mongoose.model("product",Product)
+export default mongoose.model("product", Product,)
 
 
 //schema de la colleccion 
